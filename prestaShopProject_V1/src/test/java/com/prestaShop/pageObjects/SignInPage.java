@@ -1,10 +1,5 @@
 package com.prestaShop.pageObjects;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
 
-	WebDriver driver;
+	private WebDriver driver;
 	public SignInPage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -20,16 +15,7 @@ public class SignInPage {
 	}
 
 	@FindBy(xpath="//span[contains(text(),'Sign in')]")
-	WebElement signin;
-
-	//	@FindBy(xpath="//div//div[@class='form-group row ']//input[@name='email']")
-	//	WebElement email;
-	//	
-	//	@FindBy(xpath="//input[@name='password']")
-	//	WebElement password;
-	//	
-	//	@FindBy(xpath="//button[@class='btn btn-primary']")
-	//	WebElement signinButton;
+	WebElement signinLink;
 
 	@FindBy(xpath="//div[@class='no-account']/a")
 	WebElement createAccountLink;
@@ -55,10 +41,24 @@ public class SignInPage {
 	@FindBy(xpath="//button[@data-link-action='save-customer']")
 	WebElement saveButton;
 
-	public void clickSignIn()
+	@FindBy(xpath="//a[@class='account']//span[@class='hidden-sm-down']")
+	WebElement signedinName;
+	
+	@FindBy(xpath="//div//div[@class='form-group row ']//input[@name='email']")
+	WebElement loginEmail;
+	
+	@FindBy(xpath="//input[@name='password']")
+	WebElement loginPassword;
+	
+	@FindBy(xpath="//button[@class='btn btn-primary']")
+	WebElement loginButton;
+
+	public void clickSignIn() throws InterruptedException
 	{
+		Thread.sleep(15000);
 		driver.switchTo().frame(0);
-		signin.click();
+		Thread.sleep(2000);
+		signinLink.click();
 	}
 
 	public void setFirstName(String name)
@@ -98,39 +98,29 @@ public class SignInPage {
 		saveButton.click();
 	}
 
-	
 	public void clickCreateAccountLink()
 	{
 		createAccountLink.click();
 	}
 
-	public void createCookie()
+	public String actaulSigninName()
 	{
-		File file = new File("Cookies.data");							
-		try		
-		{	  
-			// Delete old file if exists
-			file.delete();		
-			file.createNewFile();			
-			FileWriter fileWrite = new FileWriter(file);							
-			BufferedWriter Bwrite = new BufferedWriter(fileWrite);							
-			// loop for getting the cookie information 		
-
-			// loop for getting the cookie information 		
-			for(Cookie ck : driver.manage().getCookies())							
-			{			
-				Bwrite.write((ck.getName()+";"+ck.getValue()+";"+ck.getDomain()+";"+ck.getPath()+";"+ck.getExpiry()+";"+ck.isSecure()));																									
-				Bwrite.newLine();             
-			}			
-			Bwrite.close();			
-			fileWrite.close();	
-
-		}
-		catch(Exception ex)					
-		{		
-			ex.printStackTrace();			
-		}		
-	}		
-
+		return signedinName.getText();
+	}
+	
+	public void setLoginEmail(String email)
+	{
+		loginEmail.sendKeys(email);
+	}
+	
+	public void setLoginPassword(String pwd)
+	{
+		loginPassword.sendKeys(pwd);
+	}
+	
+	public void clickLoginButton()
+	{
+		loginButton.click();
+	}
 }
 

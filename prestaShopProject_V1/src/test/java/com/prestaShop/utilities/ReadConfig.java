@@ -6,8 +6,8 @@ import java.util.Properties;
 
 public class ReadConfig {
 
-	Properties property;
-	public ReadConfig(String path)
+	private static Properties property;
+	public static Properties ReadConfiguration(String path)
 	{
 		File src = new File(path);
 		try
@@ -20,60 +20,6 @@ public class ReadConfig {
 		{
 			System.out.println("Exception is:"+e.getMessage());
 		}
+		return property;
 	}
-	
-	public String getBaseURL()
-	{
-		return property.getProperty("URL");
-	}
-
-	public String getFirstName()
-	{
-		return property.getProperty("firstName");
-	}
-	
-	public String getLastName()
-	{
-		return property.getProperty("lastName");
-	}
-	
-	public String getPassword()
-	{
-		return property.getProperty("password");
-	}
-	
-	public String getBirthday()
-	{
-		return property.getProperty("birthday");
-	}
-	public String getProduct()
-	{
-		return property.getProperty("product");
-	}
-	
-	public String getProductQuantity()
-	{
-		return property.getProperty("quantity");
-	}
-	
-	public String getAddItemLabel()
-	{
-		return property.getProperty("label");
-	}
-	
-	public String getExpectedProductName()
-	{
-		return property.getProperty("ExpectedProductName");
-	}
-	
-	public String getExpectedProductDimension()
-	{
-		return property.getProperty("ExpectedProductDimension");
-	}
-	
-	public String getExpectedProductQuantity()
-	{
-		return property.getProperty("ExpectedProductQuantity");
-	}
-	
 }

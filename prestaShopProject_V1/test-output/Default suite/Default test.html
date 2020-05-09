@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 06 13:45:30 IST 2020</td>
+<td>Started on:</td><td>Sat May 09 12:33:50 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1781 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56937 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.prestaShop.testRunner.TestRunner.feature()'><b>feature</b><br>Test class: com.prestaShop.testRunner.TestRunner<br>Parameters: Place an order in PrestaShop</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+<td title='com.prestaShop.testRunner.TestRunner.feature()'><b>feature</b><br>Test class: com.prestaShop.testRunner.TestRunner<br>Parameters: Sign in feature</td>
+<td><div><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:31)
+	at com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,13 +103,121 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.NullPointerException
-	at com.prestaShop.stepDefinitions.TC_001_AddToCart.open_URL_in_any_browser(TC_001_AddToCart.java:33)
-	at ?.Given I open URL(addtocart.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace304715920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace304715920'><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+Caused by: cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 34 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00510C83+1707139]
+	Ordinal0 [0x004768F1+1075441]
+	Ordinal0 [0x003EDFC9+516041]
+	Ordinal0 [0x003E687B+485499]
+	Ordinal0 [0x003E6499+484505]
+	Ordinal0 [0x003E5D96+482710]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003ECD25+511269]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003EB5AE+505262]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E9E1C+499228]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E94B7+496823]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E1B5C+465756]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E4EC4+478916]
+	Ordinal0 [0x003EECA0+519328]
+	Ordinal0 [0x0039CA67+182887]
+	Ordinal0 [0x0039BDDD+179677]
+	Ordinal0 [0x00399D4B+171339]
+	Ordinal0 [0x00381D4A+73034]
+	Ordinal0 [0x00382DC0+77248]
+	Ordinal0 [0x00382D59+77145]
+	Ordinal0 [0x0048BB67+1162087]
+	GetHandleVerifier [0x005AA966+508998]
+	GetHandleVerifier [0x005AA6A4+508292]
+	GetHandleVerifier [0x005BF7B7+594583]
+	GetHandleVerifier [0x005AB1D6+511158]
+	Ordinal0 [0x0048402C+1130540]
+	Ordinal0 [0x0048D4CB+1168587]
+	Ordinal0 [0x0048D633+1168947]
+	Ordinal0 [0x004A5B35+1268533]
+	BaseThreadInitThunk [0x75B0343D+18]
+	RtlInitializeExceptionChain [0x77E69812+99]
+	RtlInitializeExceptionChain [0x77E697E5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.prestaShop.utilities.chooseYourBrowser.getBrowser(chooseYourBrowser.java:24)
+	at com.prestaShop.stepDefinitions.TC_001_Signin.&lt;init&gt;(TC_001_Signin.java:15)
+	... 39 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace598325842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace598325842'><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:31)
+	at com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,12 +242,120 @@ Caused by: java.lang.NullPointerException
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.NullPointerException
-	at com.prestaShop.stepDefinitions.TC_001_AddToCart.open_URL_in_any_browser(TC_001_AddToCart.java:33)
-	at ?.Given I open URL(addtocart.feature:4)
+Caused by: cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 34 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00510C83+1707139]
+	Ordinal0 [0x004768F1+1075441]
+	Ordinal0 [0x003EDFC9+516041]
+	Ordinal0 [0x003E687B+485499]
+	Ordinal0 [0x003E6499+484505]
+	Ordinal0 [0x003E5D96+482710]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003ECD25+511269]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003EB5AE+505262]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E9E1C+499228]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E94B7+496823]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E5A3B+481851]
+	Ordinal0 [0x003E53AC+480172]
+	Ordinal0 [0x003E55D5+480725]
+	Ordinal0 [0x003E5035+479285]
+	Ordinal0 [0x003E1B5C+465756]
+	Ordinal0 [0x003E4FE8+479208]
+	Ordinal0 [0x003E4EC4+478916]
+	Ordinal0 [0x003EECA0+519328]
+	Ordinal0 [0x0039CA67+182887]
+	Ordinal0 [0x0039BDDD+179677]
+	Ordinal0 [0x00399D4B+171339]
+	Ordinal0 [0x00381D4A+73034]
+	Ordinal0 [0x00382DC0+77248]
+	Ordinal0 [0x00382D59+77145]
+	Ordinal0 [0x0048BB67+1162087]
+	GetHandleVerifier [0x005AA966+508998]
+	GetHandleVerifier [0x005AA6A4+508292]
+	GetHandleVerifier [0x005BF7B7+594583]
+	GetHandleVerifier [0x005AB1D6+511158]
+	Ordinal0 [0x0048402C+1130540]
+	Ordinal0 [0x0048D4CB+1168587]
+	Ordinal0 [0x0048D633+1168947]
+	Ordinal0 [0x004A5B35+1268533]
+	BaseThreadInitThunk [0x75B0343D+18]
+	RtlInitializeExceptionChain [0x77E69812+99]
+	RtlInitializeExceptionChain [0x77E697E5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.prestaShop.utilities.chooseYourBrowser.getBrowser(chooseYourBrowser.java:24)
+	at com.prestaShop.stepDefinitions.TC_001_Signin.&lt;init&gt;(TC_001_Signin.java:15)
+	... 39 more
 </pre></div></td>
-<td>0</td>
-<td>com.prestaShop.testRunner.TestRunner@7f63425a</td></tr>
+<td>55</td>
+<td>com.prestaShop.testRunner.TestRunner@2d3fcdbd</td></tr>
 </table><p>
 </body>
 </html>

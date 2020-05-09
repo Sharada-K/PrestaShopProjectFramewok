@@ -1,0 +1,152 @@
+Feature: Sign in feature
+
+  Background:                # signin.feature:3
+    Given Launch any browser # BackgroudSteps.launch_any_browser()
+    And Open URL             # BackgroudSteps.open_URL()
+
+  Scenario: Create new account in prestashop                           # signin.feature:7
+    Given I have active email address                                  # TC_001_Signin.i_have_active_email_address()
+      cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:32)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+      	at org.testng.TestRunner.run(TestRunner.java:632)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+      	at org.testng.TestNG.run(TestNG.java:1064)
+      	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+      	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+      	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+      Caused by: java.lang.reflect.InvocationTargetException
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+      	... 34 more
+      Caused by: org.openqa.selenium.SessionNotCreatedException: session not created
+      from disconnected: received Inspector.detached event
+        (Session info: chrome=81.0.4044.138)
+      Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+      System info: host: 'PC', ip: '192.168.1.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+      Driver info: driver.version: ChromeDriver
+      remote stacktrace: Backtrace:
+      	Ordinal0 [0x00510C83+1707139]
+      	Ordinal0 [0x004768F1+1075441]
+      	Ordinal0 [0x003EDFC9+516041]
+      	Ordinal0 [0x003E687B+485499]
+      	Ordinal0 [0x003E6499+484505]
+      	Ordinal0 [0x003E5D96+482710]
+      	Ordinal0 [0x003E53AC+480172]
+      	Ordinal0 [0x003E55D5+480725]
+      	Ordinal0 [0x003E5035+479285]
+      	Ordinal0 [0x003ECD25+511269]
+      	Ordinal0 [0x003E4FE8+479208]
+      	Ordinal0 [0x003E5A3B+481851]
+      	Ordinal0 [0x003E53AC+480172]
+      	Ordinal0 [0x003E55D5+480725]
+      	Ordinal0 [0x003E5035+479285]
+      	Ordinal0 [0x003EB5AE+505262]
+      	Ordinal0 [0x003E4FE8+479208]
+      	Ordinal0 [0x003E5A3B+481851]
+      	Ordinal0 [0x003E53AC+480172]
+      	Ordinal0 [0x003E55D5+480725]
+      	Ordinal0 [0x003E5035+479285]
+      	Ordinal0 [0x003E9E1C+499228]
+      	Ordinal0 [0x003E4FE8+479208]
+      	Ordinal0 [0x003E5A3B+481851]
+      	Ordinal0 [0x003E53AC+480172]
+      	Ordinal0 [0x003E55D5+480725]
+      	Ordinal0 [0x003E5035+479285]
+      	Ordinal0 [0x003E94B7+496823]
+      	Ordinal0 [0x003E4FE8+479208]
+      	Ordinal0 [0x003E5A3B+481851]
+      	Ordinal0 [0x003E53AC+480172]
+      	Ordinal0 [0x003E55D5+480725]
+      	Ordinal0 [0x003E5035+479285]
+      	Ordinal0 [0x003E1B5C+465756]
+      	Ordinal0 [0x003E4FE8+479208]
+      	Ordinal0 [0x003E4EC4+478916]
+      	Ordinal0 [0x003EECA0+519328]
+      	Ordinal0 [0x0039CA67+182887]
+      	Ordinal0 [0x0039BDDD+179677]
+      	Ordinal0 [0x00399D4B+171339]
+      	Ordinal0 [0x00381D4A+73034]
+      	Ordinal0 [0x00382DC0+77248]
+      	Ordinal0 [0x00382D59+77145]
+      	Ordinal0 [0x0048BB67+1162087]
+      	GetHandleVerifier [0x005AA966+508998]
+      	GetHandleVerifier [0x005AA6A4+508292]
+      	GetHandleVerifier [0x005BF7B7+594583]
+      	GetHandleVerifier [0x005AB1D6+511158]
+      	Ordinal0 [0x0048402C+1130540]
+      	Ordinal0 [0x0048D4CB+1168587]
+      	Ordinal0 [0x0048D633+1168947]
+      	Ordinal0 [0x004A5B35+1268533]
+      	BaseThreadInitThunk [0x75B0343D+18]
+      	RtlInitializeExceptionChain [0x77E69812+99]
+      	RtlInitializeExceptionChain [0x77E697E5+54]
+      
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+      	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+      	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+      	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+      	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+      	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+      	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+      	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+      	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+      	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+      	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+      	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+      	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+      	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+      	at com.prestaShop.utilities.chooseYourBrowser.getBrowser(chooseYourBrowser.java:24)
+      	at com.prestaShop.stepDefinitions.TC_001_Signin.<init>(TC_001_Signin.java:15)
+      	... 39 more
+
+    When I click on SignIn link                                        # TC_001_Signin.i_click_on_SignIn_link()
+    And I click on create another account                              # TC_001_Signin.i_click_on_create_another_account()
+    And I enter firstname and lastname                                 # TC_001_Signin.i_enter_firstname_and_lastname()
+    And I enter email address and new password                         # TC_001_Signin.i_enter_email_address_and_new_password()
+    And I enter birthday date                                          # TC_001_Signin.i_enter_birthday_date()
+    And I check the terms and conditions checkbox                      # TC_001_Signin.i_check_the_terms_and_conditions_checkbox()
+    And I click on save button                                         # TC_001_Signin.i_click_on_save_button()
+    Then I validate that signed in successfully with the above details # TC_001_Signin.i_validate_that_signed_in_successfully_with_the_above_details()

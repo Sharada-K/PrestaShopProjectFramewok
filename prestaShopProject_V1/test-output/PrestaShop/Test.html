@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 05 22:34:19 IST 2020</td>
+<td>Started on:</td><td>Fri May 08 23:49:37 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (455 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (120 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.prestaShop.testRunner.TestRunner.setUpClass()'><b>setUpClass</b><br>Test class: com.prestaShop.testRunner.TestRunner</td>
-<td><div><pre>cucumber.runtime.CucumberException: You&apos;re not allowed to extend classes that define Step Definitions or hooks. class com.prestaShop.stepDefinitions.TC_001_AddToCart extends class com.prestaShop.stepDefinitions.BaseClass
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:63)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
-	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:92)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:70)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:42)
-	at com.prestaShop.testRunner.TestRunner.setUpClass(TestRunner.java:24)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131206411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace131206411'><pre>cucumber.runtime.CucumberException: You&apos;re not allowed to extend classes that define Step Definitions or hooks. class com.prestaShop.stepDefinitions.TC_001_AddToCart extends class com.prestaShop.stepDefinitions.BaseClass
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:63)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
-	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:92)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:70)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:42)
-	at com.prestaShop.testRunner.TestRunner.setUpClass(TestRunner.java:24)
+<td><div><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.cucumber.listener.ExtentCucumber&lt;Formatter&gt;
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
+	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
+	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
+	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
+	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:90)
+	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
+	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
+	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:37)
+	at com.prestaShop.testRunner.TestRunner.setUpClass(TestRunner.java:39)
+Caused by: java.lang.ClassNotFoundException: com.cucumber.listener.ExtentCucumber&lt;Formatter&gt;
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace125622176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace125622176'><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.cucumber.listener.ExtentCucumber&lt;Formatter&gt;
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
+	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
+	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
+	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
+	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:90)
+	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
+	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
+	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:37)
+	at com.prestaShop.testRunner.TestRunner.setUpClass(TestRunner.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,9 +128,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.ClassNotFoundException: com.cucumber.listener.ExtentCucumber&lt;Formatter&gt;
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
+	... 32 more
 </pre></div></td>
 <td>0</td>
-<td>com.prestaShop.testRunner.TestRunner@96532d6</td></tr>
+<td>com.prestaShop.testRunner.TestRunner@2d3fcdbd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -134,7 +150,7 @@ function toggleAllBoxes() {
 <td title='com.prestaShop.testRunner.TestRunner.tearDownClass()'><b>tearDownClass</b><br>Test class: com.prestaShop.testRunner.TestRunner</td>
 <td></td>
 <td>0</td>
-<td>com.prestaShop.testRunner.TestRunner@96532d6</td></tr>
+<td>com.prestaShop.testRunner.TestRunner@2d3fcdbd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -147,10 +163,10 @@ function toggleAllBoxes() {
 <td title='com.prestaShop.testRunner.TestRunner.feature()'><b>feature</b><br>Test class: com.prestaShop.testRunner.TestRunner</td>
 <td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
 Caused by: java.lang.NullPointerException
-	at com.prestaShop.testRunner.TestRunner.features(TestRunner.java:36)
+	at com.prestaShop.testRunner.TestRunner.features(TestRunner.java:54)
 	... 20 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606304070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1606304070'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace667026744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace667026744'><pre>java.lang.RuntimeException: java.lang.NullPointerException
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
@@ -173,7 +189,7 @@ Caused by: java.lang.NullPointerException
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 Caused by: java.lang.NullPointerException
-	at com.prestaShop.testRunner.TestRunner.features(TestRunner.java:36)
+	at com.prestaShop.testRunner.TestRunner.features(TestRunner.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,7 +199,7 @@ Caused by: java.lang.NullPointerException
 	... 20 more
 </pre></div></td>
 <td>0</td>
-<td>com.prestaShop.testRunner.TestRunner@96532d6</td></tr>
+<td>com.prestaShop.testRunner.TestRunner@2d3fcdbd</td></tr>
 </table><p>
 </body>
 </html>

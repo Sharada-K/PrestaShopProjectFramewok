@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30438778699,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch any browser",
+            "match": {
+              "location": "BackgroudSteps.launch_any_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12311939989,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open URL",
+            "match": {
+              "location": "BackgroudSteps.open_URL()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Create new account in prestashop",
+        "description": "",
+        "id": "sign-in-feature;create-new-account-in-prestashop",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12694118832,
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class com.prestaShop.stepDefinitions.TC_001_Signin\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat com.prestaShop.testRunner.TestRunner.feature(TestRunner.java:32)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:645)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 34 more\r\nCaused by: org.openqa.selenium.SessionNotCreatedException: session not created\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d81.0.4044.138)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.109\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00510C83+1707139]\n\tOrdinal0 [0x004768F1+1075441]\n\tOrdinal0 [0x003EDFC9+516041]\n\tOrdinal0 [0x003E687B+485499]\n\tOrdinal0 [0x003E6499+484505]\n\tOrdinal0 [0x003E5D96+482710]\n\tOrdinal0 [0x003E53AC+480172]\n\tOrdinal0 [0x003E55D5+480725]\n\tOrdinal0 [0x003E5035+479285]\n\tOrdinal0 [0x003ECD25+511269]\n\tOrdinal0 [0x003E4FE8+479208]\n\tOrdinal0 [0x003E5A3B+481851]\n\tOrdinal0 [0x003E53AC+480172]\n\tOrdinal0 [0x003E55D5+480725]\n\tOrdinal0 [0x003E5035+479285]\n\tOrdinal0 [0x003EB5AE+505262]\n\tOrdinal0 [0x003E4FE8+479208]\n\tOrdinal0 [0x003E5A3B+481851]\n\tOrdinal0 [0x003E53AC+480172]\n\tOrdinal0 [0x003E55D5+480725]\n\tOrdinal0 [0x003E5035+479285]\n\tOrdinal0 [0x003E9E1C+499228]\n\tOrdinal0 [0x003E4FE8+479208]\n\tOrdinal0 [0x003E5A3B+481851]\n\tOrdinal0 [0x003E53AC+480172]\n\tOrdinal0 [0x003E55D5+480725]\n\tOrdinal0 [0x003E5035+479285]\n\tOrdinal0 [0x003E94B7+496823]\n\tOrdinal0 [0x003E4FE8+479208]\n\tOrdinal0 [0x003E5A3B+481851]\n\tOrdinal0 [0x003E53AC+480172]\n\tOrdinal0 [0x003E55D5+480725]\n\tOrdinal0 [0x003E5035+479285]\n\tOrdinal0 [0x003E1B5C+465756]\n\tOrdinal0 [0x003E4FE8+479208]\n\tOrdinal0 [0x003E4EC4+478916]\n\tOrdinal0 [0x003EECA0+519328]\n\tOrdinal0 [0x0039CA67+182887]\n\tOrdinal0 [0x0039BDDD+179677]\n\tOrdinal0 [0x00399D4B+171339]\n\tOrdinal0 [0x00381D4A+73034]\n\tOrdinal0 [0x00382DC0+77248]\n\tOrdinal0 [0x00382D59+77145]\n\tOrdinal0 [0x0048BB67+1162087]\n\tGetHandleVerifier [0x005AA966+508998]\n\tGetHandleVerifier [0x005AA6A4+508292]\n\tGetHandleVerifier [0x005BF7B7+594583]\n\tGetHandleVerifier [0x005AB1D6+511158]\n\tOrdinal0 [0x0048402C+1130540]\n\tOrdinal0 [0x0048D4CB+1168587]\n\tOrdinal0 [0x0048D633+1168947]\n\tOrdinal0 [0x004A5B35+1268533]\n\tBaseThreadInitThunk [0x75B0343D+18]\n\tRtlInitializeExceptionChain [0x77E69812+99]\n\tRtlInitializeExceptionChain [0x77E697E5+54]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:130)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.prestaShop.utilities.chooseYourBrowser.getBrowser(chooseYourBrowser.java:24)\r\n\tat com.prestaShop.stepDefinitions.TC_001_Signin.\u003cinit\u003e(TC_001_Signin.java:15)\r\n\t... 39 more\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I have active email address",
+            "match": {
+              "location": "TC_001_Signin.i_have_active_email_address()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I click on SignIn link",
+            "match": {
+              "location": "TC_001_Signin.i_click_on_SignIn_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click on create another account",
+            "match": {
+              "location": "TC_001_Signin.i_click_on_create_another_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter firstname and lastname",
+            "match": {
+              "location": "TC_001_Signin.i_enter_firstname_and_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I enter email address and new password",
+            "match": {
+              "location": "TC_001_Signin.i_enter_email_address_and_new_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enter birthday date",
+            "match": {
+              "location": "TC_001_Signin.i_enter_birthday_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I check the terms and conditions checkbox",
+            "match": {
+              "location": "TC_001_Signin.i_check_the_terms_and_conditions_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I click on save button",
+            "match": {
+              "location": "TC_001_Signin.i_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I validate that signed in successfully with the above details",
+            "match": {
+              "location": "TC_001_Signin.i_validate_that_signed_in_successfully_with_the_above_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sign in feature",
+    "description": "",
+    "id": "sign-in-feature",
+    "keyword": "Feature",
+    "uri": "signin.feature"
+  }
+]

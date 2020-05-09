@@ -3,8 +3,10 @@
 <suite name="PrestaShop" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.prestaShop.stepDefinitions.BaseClass"/>
       <class name="com.prestaShop.testRunner.TestRunner"/>
     </classes>
+    
   </test> <!-- Test -->
-</suite> <!-- PrestaShop -->
+</suite> <!-- PrestaShop -->  
+
+
