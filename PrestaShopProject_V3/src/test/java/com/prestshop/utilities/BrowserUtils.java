@@ -3,17 +3,20 @@ package com.prestshop.utilities;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class chooseYourBrowser {
+public class BrowserUtils {
 
 	public static WebDriver driver;
 	private static Properties property;
-	private static String path = "C:\\Users\\Admin\\git\\PrestaShopProjectFramewok\\prestaShopProject_V1\\Configuration\\browser-config.properties";
+	private static String path = "C:\\Users\\Admin\\git\\PrestaShopProjectFramewok\\PrestaShopProject_V3\\Configuration\\browser-config.properties";
+	private static Logger logger = Log4jUtilities.logger;
 	
+	//This method will return the driver
 	public static WebDriver getBrowser()
 	{
 		property = ReadConfig.ReadConfiguration(path);
@@ -23,19 +26,19 @@ public class chooseYourBrowser {
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
-			System.out.println("Chrome browser launched");
+			logger.info("Chrome browser initiated");
 		}
 		else if(browser.equalsIgnoreCase("ie"))
 		{
 			System.setProperty("webdriver.ie.driver", "./Driver/internetexplorer.exe");
 			driver = new InternetExplorerDriver();
-			System.out.println("ie browser launched");
+			logger.info("IE browser initiated");
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
-			System.out.println("firefox browser launched");
+			logger.info("Firefox browser initiated");
 		}
 		driver.get(property.getProperty("URL"));
 		driver.manage().window().maximize();
@@ -43,6 +46,7 @@ public class chooseYourBrowser {
 		return driver;
 	}
 	
+	//This method will quit the driver
 	public static void closeBrowser()
 	{
 		driver.quit();

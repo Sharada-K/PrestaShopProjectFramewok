@@ -7,6 +7,8 @@ import java.util.Properties;
 public class ReadConfig {
 
 	private static Properties property;
+	
+	//This methos will initialize the property
 	public static Properties ReadConfiguration(String path)
 	{
 		File src = new File(path);

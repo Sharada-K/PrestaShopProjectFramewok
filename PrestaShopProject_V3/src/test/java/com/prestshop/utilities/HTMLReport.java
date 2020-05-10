@@ -1,6 +1,5 @@
 package com.prestshop.utilities;
 
-//This is the Listener class used to generate Extent reports
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -19,6 +18,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+//This is the Listener class used to generate Extent reports
 public class HTMLReport extends TestListenerAdapter{
 	
 	public ExtentHtmlReporter htmlReporter;

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="142400" started-at="2020-05-09T19:33:51Z" finished-at="2020-05-09T19:36:13Z">
+  <suite name="Suite" duration-ms="255021" started-at="2020-05-10T09:09:58Z" finished-at="2020-05-10T09:14:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="142400" started-at="2020-05-09T19:33:51Z" finished-at="2020-05-09T19:36:13Z">
+    <test name="Test" duration-ms="255021" started-at="2020-05-10T09:09:58Z" finished-at="2020-05-10T09:14:13Z">
       <class name="testrunner.MyTestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="setUpClass" is-config="true" duration-ms="628" started-at="2020-05-10T01:03:51Z" finished-at="2020-05-10T01:03:52Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="setUpClass" is-config="true" duration-ms="760" started-at="2020-05-10T14:39:58Z" finished-at="2020-05-10T14:39:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="feature" duration-ms="75846" started-at="2020-05-10T01:03:52Z" data-provider="features" finished-at="2020-05-10T01:05:08Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="feature" duration-ms="138239" started-at="2020-05-10T14:39:59Z" data-provider="features" finished-at="2020-05-10T14:42:17Z">
           <params>
             <param index="0">
               <value>
@@ -56,8 +56,8 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.prestashop.pageObjects.ItemSearchPage.itemAddedSuccessfully(ItemSearchPage.java:102)
-	at com.prestashop.stepDefinitions.TC_003_AddTo_Cart.i_validate_that_item_added_to_the_cart_successfully(TC_003_AddTo_Cart.java:56)
+	at com.prestashop.pageObjects.ItemSearchPage.itemAddedSuccessfully(ItemSearchPage.java:105)
+	at com.prestashop.stepDefinitions.TC_003_AddTo_Cart.i_validate_that_item_added_to_the_cart_successfully(TC_003_AddTo_Cart.java:67)
 	at ✽.Then I validate that item added to the cart successfully(addToCart.feature:12)
 ]]>
             </full-stacktrace>
@@ -65,7 +65,7 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="feature" duration-ms="64997" started-at="2020-05-10T01:05:08Z" data-provider="features" finished-at="2020-05-10T01:06:13Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="feature" duration-ms="115103" started-at="2020-05-10T14:42:18Z" data-provider="features" finished-at="2020-05-10T14:44:13Z">
           <params>
             <param index="0">
               <value>
@@ -76,11 +76,11 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="tearDownClass" is-config="true" duration-ms="166" started-at="2020-05-10T01:06:13Z" finished-at="2020-05-10T01:06:13Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="tearDownClass" is-config="true" duration-ms="194" started-at="2020-05-10T14:44:13Z" finished-at="2020-05-10T14:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-05-10T01:06:13Z" finished-at="2020-05-10T01:06:13Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testrunner.MyTestRunner@5a61f5df]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-05-10T14:44:13Z" finished-at="2020-05-10T14:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

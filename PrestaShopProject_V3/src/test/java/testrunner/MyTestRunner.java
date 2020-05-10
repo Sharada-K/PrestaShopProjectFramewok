@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.prestshop.utilities.chooseYourBrowser;
+import com.prestshop.utilities.BrowserUtils;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
@@ -21,7 +21,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 public class MyTestRunner{	
 
 	private TestNGCucumberRunner testNGCucumberRunner;
-	private chooseYourBrowser browserInfo;
+	private BrowserUtils browserInfo;
 
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() throws Exception

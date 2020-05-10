@@ -2,12 +2,14 @@ package com.prestashop.pageObjects;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.prestshop.utilities.Log4jUtilities;
 import com.prestshop.utilities.ScreenshotUtils;
 import com.prestshop.utilities.WebDriverWaitUtils;
 
@@ -61,6 +63,7 @@ public class SignInPage {
 
 	WebDriverWaitUtils w = new WebDriverWaitUtils();
 	ScreenshotUtils s = new ScreenshotUtils();
+	Logger logger = Log4jUtilities.logger;
 	
 	public void clickSignIn() throws InterruptedException
 	{
@@ -133,8 +136,13 @@ public class SignInPage {
 		String actualName = signedinName.getText();
 		if(!(actualName.equals(expectedName)))
 		{
+			logger.info("Testcase failed");
 			s.captureScreen(TCName);
 			Assert.assertTrue(false);
+		}
+		else
+		{
+			logger.info("Testcase passed");
 		}
 	}
 }

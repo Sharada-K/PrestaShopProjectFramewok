@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import com.prestshop.utilities.Log4jUtilities;
 import com.prestshop.utilities.ScreenshotUtils;
 import com.prestshop.utilities.WebDriverWaitUtils;
 
@@ -50,6 +52,7 @@ public class ItemSearchPage {
 	
 	WebDriverWaitUtils w = new WebDriverWaitUtils();
 	ScreenshotUtils s = new ScreenshotUtils();
+	Logger logger = Log4jUtilities.logger;
 	
 	public void searchProduct(String product) throws InterruptedException
 	{
@@ -94,13 +97,17 @@ public class ItemSearchPage {
 		driver.switchTo().activeElement();		
 		w.wait(driver,10,itemAddedLabel);
 		
-		//Compare Actual text and Expected text
 		String actualText = itemAddedLabel.getText();
-		if(!(actualText.equals(expectedText)))
+		if(!(actualText.contains(expectedText)))
 		{
+			logger.info("Testcase failed");
 			s.captureScreen(TCName);
 			Assert.assertTrue(false);
-		}		
+		}	
+		else
+		{
+			logger.info("Testcase passed");
+		}
 	}
 	
 	public void clickProceedToCheckOutButton() throws InterruptedException

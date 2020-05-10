@@ -1,0 +1,152 @@
+2020-05-10 13:34:43,347 [main] INFO PrestaShop - User have valid email address
+2020-05-10 13:35:06,579 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 13:35:08,668 [main] INFO PrestaShop - User clicked on create new account link
+2020-05-10 13:35:08,787 [main] INFO PrestaShop - User entered first name and last name
+2020-05-10 13:35:08,856 [main] INFO PrestaShop - User entered email address
+2020-05-10 13:35:08,896 [main] INFO PrestaShop - User entered new password
+2020-05-10 13:35:08,934 [main] INFO PrestaShop - User entered birthday in MM/DD/YYYY format
+2020-05-10 13:35:09,182 [main] INFO PrestaShop - User clicked on terms and conditions checkbox
+2020-05-10 13:35:16,164 [main] INFO PrestaShop - User clicked on save button
+2020-05-10 13:52:59,308 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 13:53:10,172 [main] INFO PrestaShop - User entered poster on the search textbox
+2020-05-10 13:53:14,801 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 13:53:16,657 [main] INFO PrestaShop - User selected third product
+2020-05-10 13:53:17,068 [main] INFO PrestaShop - User selected 2nd option from the dimension drop down
+2020-05-10 13:53:17,164 [main] INFO PrestaShop - User entered quantity
+2020-05-10 13:53:17,421 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 13:53:18,934 [main] INFO PrestaShop - Testcase failed
+2020-05-10 13:53:53,731 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 13:54:05,349 [main] INFO PrestaShop - User entered t-shirt on the search textbox
+2020-05-10 13:54:07,653 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 13:54:13,822 [main] INFO PrestaShop - User clicked on the first product
+2020-05-10 13:54:14,119 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 13:54:20,058 [main] INFO PrestaShop - User clicked on proceed to checkout button
+2020-05-10 13:54:20,125 [main] INFO PrestaShop - Testcase passed
+2020-05-10 13:54:20,150 [main] INFO PrestaShop - Testcase passed
+2020-05-10 13:54:53,322 [main] INFO PrestaShop - User have account in presta
+2020-05-10 13:55:09,768 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 13:55:09,840 [main] INFO PrestaShop - User entered email address
+2020-05-10 13:55:09,897 [main] INFO PrestaShop - User entered password
+2020-05-10 13:55:10,844 [main] INFO PrestaShop - User clicked on signin button
+2020-05-10 13:56:06,055 [main] INFO PrestaShop - User have valid email address
+2020-05-10 13:56:22,624 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 13:56:25,034 [main] INFO PrestaShop - User clicked on create new account link
+2020-05-10 13:56:25,149 [main] INFO PrestaShop - User entered first name and last name
+2020-05-10 13:56:25,238 [main] INFO PrestaShop - User entered email address
+2020-05-10 13:56:25,291 [main] INFO PrestaShop - User entered new password
+2020-05-10 13:56:25,331 [main] INFO PrestaShop - User entered birthday in MM/DD/YYYY format
+2020-05-10 13:56:25,602 [main] INFO PrestaShop - User clicked on terms and conditions checkbox
+2020-05-10 13:56:29,383 [main] INFO PrestaShop - User clicked on save button
+2020-05-10 13:56:29,441 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:24:08,974 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:24:47,173 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:24:55,268 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:24:59,136 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 14:25:02,610 [main] INFO PrestaShop - User entered t-shirt on the search textbox
+2020-05-10 14:25:05,544 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 14:25:07,989 [main] INFO PrestaShop - User clicked on the first product
+2020-05-10 14:25:08,486 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 14:25:11,056 [main] INFO PrestaShop - User clicked on proceed to checkout button
+2020-05-10 14:25:11,127 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:25:11,180 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:25:36,689 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:25:46,819 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:25:46,836 [main] INFO PrestaShop - User have account in presta
+2020-05-10 14:26:03,504 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:26:03,643 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:26:03,757 [main] INFO PrestaShop - User entered password
+2020-05-10 14:26:05,140 [main] INFO PrestaShop - User clicked on signin button
+2020-05-10 14:26:05,174 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:26:29,180 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:26:39,550 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:26:39,573 [main] INFO PrestaShop - User have valid email address
+2020-05-10 14:26:56,067 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:26:57,940 [main] INFO PrestaShop - User clicked on create new account link
+2020-05-10 14:26:58,175 [main] INFO PrestaShop - User entered first name and last name
+2020-05-10 14:26:58,352 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:26:58,427 [main] INFO PrestaShop - User entered new password
+2020-05-10 14:26:58,504 [main] INFO PrestaShop - User entered birthday in MM/DD/YYYY format
+2020-05-10 14:26:58,759 [main] INFO PrestaShop - User clicked on terms and conditions checkbox
+2020-05-10 14:27:01,031 [main] INFO PrestaShop - User clicked on save button
+2020-05-10 14:27:01,081 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:31:22,758 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:31:31,233 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:31:32,237 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 14:31:46,229 [main] INFO PrestaShop - User entered poster on the search textbox
+2020-05-10 14:31:50,078 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 14:31:52,549 [main] INFO PrestaShop - User selected third product
+2020-05-10 14:31:53,159 [main] INFO PrestaShop - User selected 2nd option from the dimension drop down
+2020-05-10 14:31:53,322 [main] INFO PrestaShop - User entered quantity
+2020-05-10 14:31:53,677 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 14:31:56,313 [main] INFO PrestaShop - Testcase failed
+2020-05-10 14:31:56,620 [main] INFO PrestaShop - Screenshot taken
+2020-05-10 14:32:22,560 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:32:27,658 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:32:27,697 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 14:32:38,612 [main] INFO PrestaShop - User entered t-shirt on the search textbox
+2020-05-10 14:32:41,619 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 14:32:43,286 [main] INFO PrestaShop - User clicked on the first product
+2020-05-10 14:32:43,657 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 14:32:46,195 [main] INFO PrestaShop - User clicked on proceed to checkout button
+2020-05-10 14:32:46,243 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:32:46,263 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:33:10,712 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:33:16,775 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:33:16,806 [main] INFO PrestaShop - User have account in presta
+2020-05-10 14:33:33,420 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:33:33,590 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:33:33,717 [main] INFO PrestaShop - User entered password
+2020-05-10 14:33:34,595 [main] INFO PrestaShop - User clicked on signin button
+2020-05-10 14:34:21,052 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:34:29,852 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:34:29,868 [main] INFO PrestaShop - User have valid email address
+2020-05-10 14:34:46,300 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:34:48,281 [main] INFO PrestaShop - User clicked on create new account link
+2020-05-10 14:34:48,564 [main] INFO PrestaShop - User entered first name and last name
+2020-05-10 14:34:48,746 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:34:48,845 [main] INFO PrestaShop - User entered new password
+2020-05-10 14:34:48,924 [main] INFO PrestaShop - User entered birthday in MM/DD/YYYY format
+2020-05-10 14:34:49,209 [main] INFO PrestaShop - User clicked on terms and conditions checkbox
+2020-05-10 14:34:51,572 [main] INFO PrestaShop - User clicked on save button
+2020-05-10 14:34:51,647 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:40:26,108 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:40:45,515 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:40:48,645 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 14:40:52,301 [main] INFO PrestaShop - User entered poster on the search textbox
+2020-05-10 14:40:57,009 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 14:40:59,120 [main] INFO PrestaShop - User selected third product
+2020-05-10 14:40:59,567 [main] INFO PrestaShop - User selected 2nd option from the dimension drop down
+2020-05-10 14:40:59,722 [main] INFO PrestaShop - User entered quantity
+2020-05-10 14:40:59,990 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 14:41:01,553 [main] INFO PrestaShop - Testcase failed
+2020-05-10 14:41:01,870 [main] INFO PrestaShop - Screenshot taken
+2020-05-10 14:41:31,746 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:41:44,785 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:41:44,807 [main] INFO PrestaShop - User on the item locate page
+2020-05-10 14:41:50,333 [main] INFO PrestaShop - User entered t-shirt on the search textbox
+2020-05-10 14:41:54,992 [main] INFO PrestaShop - User clicked on search button
+2020-05-10 14:41:57,053 [main] INFO PrestaShop - User clicked on the first product
+2020-05-10 14:41:57,824 [main] INFO PrestaShop - User clicked on add to cart button
+2020-05-10 14:42:00,853 [main] INFO PrestaShop - User clicked on proceed to checkout button
+2020-05-10 14:42:01,552 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:42:01,573 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:42:35,144 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:42:48,158 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:42:48,168 [main] INFO PrestaShop - User have account in presta
+2020-05-10 14:43:04,761 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:43:04,882 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:43:04,983 [main] INFO PrestaShop - User entered password
+2020-05-10 14:43:06,593 [main] INFO PrestaShop - User clicked on signin button
+2020-05-10 14:43:06,657 [main] INFO PrestaShop - Testcase passed
+2020-05-10 14:43:29,322 [main] INFO PrestaShop - Firefox browser initiated
+2020-05-10 14:43:39,265 [main] INFO PrestaShop - Logger initiated
+2020-05-10 14:43:39,328 [main] INFO PrestaShop - User have valid email address
+2020-05-10 14:43:55,778 [main] INFO PrestaShop - User clicked on login link
+2020-05-10 14:43:58,407 [main] INFO PrestaShop - User clicked on create new account link
+2020-05-10 14:43:58,545 [main] INFO PrestaShop - User entered first name and last name
+2020-05-10 14:43:58,663 [main] INFO PrestaShop - User entered email address
+2020-05-10 14:43:58,723 [main] INFO PrestaShop - User entered new password
+2020-05-10 14:43:58,781 [main] INFO PrestaShop - User entered birthday in MM/DD/YYYY format
+2020-05-10 14:43:59,040 [main] INFO PrestaShop - User clicked on terms and conditions checkbox
+2020-05-10 14:44:01,376 [main] INFO PrestaShop - User clicked on save button
+2020-05-10 14:44:01,446 [main] INFO PrestaShop - Testcase passed
