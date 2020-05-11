@@ -1,7 +1,6 @@
-@Testcase
 Feature: Add to cart
 
- Scenario:
+ Scenario: Validate item added successfully message
     Given I am on the locate page
     When I search for poster item
     And I click search button
@@ -11,7 +10,7 @@ Feature: Add to cart
     And I click on add to cart button
     Then I validate that item added to the cart successfully
 
-	Scenario: 
+	Scenario: Validate item details
 	  Given I am on the item search page
     When I search for tshirt
      And I click Search button

@@ -21,7 +21,6 @@ import cucumber.api.testng.TestNGCucumberRunner;
 public class MyTestRunner{	
 
 	private TestNGCucumberRunner testNGCucumberRunner;
-	private BrowserUtils browserInfo;
 
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() throws Exception
@@ -34,21 +33,12 @@ public class MyTestRunner{
 	{
 		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 	}
-	
-	@AfterTest
-	public void closeBrowser()
-	{
-		browserInfo.closeBrowser();
-	}
 
 	@DataProvider
 	public Object[][] features()
 	{
 		return testNGCucumberRunner.provideFeatures();
 	}
-	
-	
-	
 
 	@AfterClass(alwaysRun = true)
 	public void tearDownClass() throws Exception

@@ -1,6 +1,5 @@
 Feature: Sign in feature
 
-@testing
  Scenario: Login with the exising account
   Given I have account in prestashop
   Then I click on Signin link
